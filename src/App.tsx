@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Home, Tabs } from "./components/pages";
+import { Home, Tabs } from "./pages";
 
-export default function BasicExample() {
+const App: FC = () => {
   return (
     <Router>
       <div>
@@ -28,4 +28,6 @@ export default function BasicExample() {
       </div>
     </Router>
   );
-}
+};
+
+export default App;
